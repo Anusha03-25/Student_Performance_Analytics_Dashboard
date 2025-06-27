@@ -1,0 +1,21 @@
+DAX FORMULAS:
+             1. Averageattendence = AVERAGE(Sheet1[Attendance (%)])
+
+             2. AverageEnglish = AVERAGE(Sheet1[English])
+
+             3. AverageLogin = AVERAGE(Sheet1[Logins ])
+
+             4. AverageMarks = (Sheet1[AverageMaths] + Sheet1[AverageScience] + Sheet1[AverageEnglish]) / 3
+
+             5. AverageMaths = AVERAGE(Sheet1[Math])
+
+             6. AverageScience = AVERAGE(Sheet1[Science])
+
+             7. PerformanceCategory = 
+                  SWITCH(TRUE(),
+                      [AverageMarks] < 40, "At Risk",
+                      [AverageMarks] >= 40 && [AverageMarks] < 60, "Average",
+                      [AverageMarks] >= 60, "Top Performer"
+              )
+
+             8. TotalStudents = COUNTROWS(Sheet1)
