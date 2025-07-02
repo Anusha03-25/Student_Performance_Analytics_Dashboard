@@ -32,6 +32,9 @@ The dashboard utilizes a dataset with the following fields:
 Output Screenshots/dashboard_overview.png)
 
 ### 2. Top vs Struggling Students
+Output Screenshots/Top.png
+Output Screenshots/Risk.png
+Output Screenshots/Average.png
 
 ---
 
