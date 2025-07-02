@@ -1,1 +1,12 @@
+Power Query (M Code):
+
+let
+    Source = Excel.Workbook(File.Contents("C:\Users\SRIYA\OneDrive\Documents\Anu\Excel\pro2.xlsx"), null, true),
+    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Student ID", Int64.Type}, {"Name", type text}, {"Math", Int64.Type}, {"Science", Int64.Type}, {"English", Int64.Type}, {"Attendance (%)", Int64.Type}, {"Logins (Monthly)", Int64.Type}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Logins (Monthly)", "Logins "}, {"Math", "Maths"}})
+in
+    #"Renamed Columns"
+
 
