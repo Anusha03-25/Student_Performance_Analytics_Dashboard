@@ -32,10 +32,6 @@ The dashboard utilizes a dataset with the following fields:
 Output Screenshots/dashboard_overview.png)
 
 ### 2. Top vs Struggling Students
-![Top vs Struggling](screenshots/top_vs_struggling.png)
-
-### 3. Correlation Analysis
-![Correlation](screenshots/correlation_analysis.png)
 
 ---
 
